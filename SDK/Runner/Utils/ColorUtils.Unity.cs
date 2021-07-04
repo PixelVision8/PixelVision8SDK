@@ -44,7 +44,7 @@ namespace PixelVision8.Runner
         
         public static string RgbToHex(Color color)
         {
-            return "#" + string.Format("{0:X2}{1:X2}{2:X2}", color.r, color.g, color.b);
+            return "#" + string.Format("{0:X2}{1:X2}{2:X2}", (int)(color.r*255), (int)(color.g * 255), (int)(color.b * 255));
         }
     }
 }
